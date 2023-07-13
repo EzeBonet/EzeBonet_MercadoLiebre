@@ -1,0 +1,420 @@
+  /* Configuraciones generales */
+
+  body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 12px;
+    background-color: #ebebeb;
+    margin: 0px;
+    padding: 0px;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+
+/* Configuración mobile */
+
+
+
+@media (max-width: 360px) {
+
+    /*mobile*/
+    nav {
+        display: none;
+    }
+
+    main {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .full {
+        display: none;
+    }
+}
+
+/* Configuración tablet */
+
+
+@media (min-width: 361px) {
+    /*tablet*/
+
+    main:not(.login-register-page) {
+        display: flex;
+        flex-flow: row wrap;
+    }
+
+    .buscar-cont {
+        width: 10%;
+    }
+
+    .container {
+        width: 50%;
+    }
+
+    article:hover {
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    }
+
+    #descripciones {
+        display: none;
+    }
+
+    article:hover #descripciones {
+        display: block;
+    }
+
+
+    .mobile {
+        display: none;
+    }
+
+    .navbar-full {
+        display: flex;
+        justify-content: space-between;
+
+    }
+
+    .navbar-full ul {
+        display: flex;
+        list-style: none;
+        padding: 10px;
+        width: 100%;
+    }
+
+    .navbar-full ul li {
+        padding: 0px 0px 5px 8px;
+    }
+
+
+    .busquedalogo-contenedor {
+        display: flex;
+        justify-content: space-between;
+    }
+
+
+    .busquedalogo-contenedor .buscar-cont {
+        width: 30%;
+    }
+
+    .busquedalogo-contenedor .img-cont {
+        width: 30%;
+    }
+
+    .busquedalogo-contenedor .full {
+        width: 30%;
+    }
+
+}
+
+/* Configuración PC */
+
+@media (min-width: 769px) {
+
+    /*desktop*/
+    main:not(.login-register-page) {
+        display: flex;
+        flex-flow: row wrap;
+    }
+
+    .container {
+        width: 25%;
+    }
+
+    .footer-iconos {
+        display: flex;
+
+    }
+
+    .footer-iconos div {
+        width: 33%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        align-items: center;
+    }
+
+
+    .copy {
+        text-align: left;
+    }
+}
+
+/* Resto del sitio - Configuraciones */
+
+
+
+.busquedalogo-contenedor {
+
+    display: flex;
+    padding: 15px;
+    align-items: center;
+}
+
+.img-cont {
+    width: 50%;
+}
+
+.buscar-cont {
+    width: 50%;
+    padding: 15px;
+    box-sizing: border-box;
+}
+
+
+.buscar-cont form {
+    display: flex;
+    position: relative;
+}
+
+.buscar-cont input {
+    border: none;
+    padding: 8px;
+    border-radius: 4px;
+    width: 100%;
+}
+
+
+.buscar-cont form button {
+    color: #666;
+    position: absolute;
+    right: 2%;
+    top: 25%;
+    border: none;
+    background-color: transparent;
+
+}
+
+.cuotas {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+}
+
+.buscar li {
+    list-style: none;
+}
+
+.burguer {
+    display: flex;
+    justify-content: center;
+}
+
+.burger-menu {
+    border-radius: 3px;
+    color: white;
+    background-color: #1259c3;
+    margin: 10px;
+    font-size: 15px;
+    width: 35px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+article {
+    margin: 15px;
+    background-color: #FFF;
+}
+
+
+.articulo {
+    border-top: 1px solid #ebebeb;
+    position: relative;
+    padding: 15px;
+}
+
+.envio {
+    color: #39b54a;
+    display: block;
+    font-size: 16px;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #39b54a;
+    background-color: #FFF;
+    border-radius: 50%;
+    position: absolute;
+    right: 20px;
+    top: -15px;
+    align-items: center;
+    justify-content: center;
+    transition-timing-function: linear;
+    transition: transform 700ms;
+}
+
+.envio:hover {
+    transform: rotate(-90deg);
+}
+
+.precio-desc {
+    display: flex;
+    flex-wrap: nowrap;
+    padding: 0px 10px 10px 0px;
+    align-items: center;
+}
+
+
+header {
+    background-color: #EAC926;
+    width: 100%;
+}
+
+footer {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    flex-direction: column;
+    padding-top: 5px;
+    background-color: white;
+    text-align: center;
+}
+
+footer p {
+    margin: 10px 22px 10px 40px;
+    color: #666;
+}
+
+
+.footerStyle {
+    margin: 10px;
+}
+
+#titulares {
+    font-size: 24px;
+    width: 100%;
+    color: #666;
+    padding: 15px;
+}
+
+#precio {
+    font-size: 18px;
+    margin-right: 10px;
+}
+
+#descuentos {
+    font-size: 16px;
+    color: #39b54a;
+}
+
+#descripciones {
+    font-size: 16px;
+    color: #666;
+}
+
+.icono {
+    color: #1259c3;
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+.icono:hover {
+    color: #051e82;
+}
+
+
+.textoFooter {
+    color: #666;
+}
+
+/* configs login */
+
+.login {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.login form {
+    width: 70%;
+    padding: 10px;
+
+}
+
+.login form input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 5px;
+}
+
+.login form input[type=password] {
+    width: 50%
+}
+
+.boton {
+    color: white;
+    background-color: #1259c3;
+    transition: background-color 0.4s;
+}
+
+.boton:hover {
+    background-color: #0022AA;
+}
+
+/* configs register */
+.selector {
+    display: flex;
+    width: 90%;
+    justify-content: center;
+    margin-bottom: 20px;
+
+
+}
+
+.selector input {
+    margin-left: 20%;
+
+}
+
+.titulo-register {
+    margin-left: 17%;
+    margin-bottom: 20px;
+
+}
+
+.intereses {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.intereses label {
+    margin-left: 20px;
+}
+
+.contenedor-intereses {
+    margin-left: 23%;
+}
+
+.botones-div {
+    padding-top: 10px;
+}
+
+
+.botones-div input {
+    border: none;
+    margin: 20px;
+    border-radius: 5px;
+    padding: 10px;
+    background-color: #1259c3;
+    color: white;
+    width: 20%;
+
+}
