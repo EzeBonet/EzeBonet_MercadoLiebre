@@ -1,5 +1,3 @@
-  /* Configuraciones generales */
-
   body {
     font-family: 'Roboto', sans-serif;
     font-size: 12px;
@@ -20,10 +18,6 @@ img {
 }
 
 
-/* Configuración mobile */
-
-
-
 @media (max-width: 360px) {
 
     /*mobile*/
@@ -42,8 +36,6 @@ img {
         display: none;
     }
 }
-
-/* Configuración tablet */
 
 
 @media (min-width: 361px) {
@@ -117,8 +109,6 @@ img {
 
 }
 
-/* Configuración PC */
-
 @media (min-width: 769px) {
 
     /*desktop*/
@@ -151,8 +141,7 @@ img {
     }
 }
 
-/* Resto del sitio - Configuraciones */
-
+/* Resto de configuraciones */
 
 
 .busquedalogo-contenedor {
@@ -331,7 +320,7 @@ footer p {
     color: #666;
 }
 
-/* configs login */
+/* login */
 
 .login {
     display: flex;
@@ -368,7 +357,7 @@ footer p {
     background-color: #0022AA;
 }
 
-/* configs register */
+/* register */
 .selector {
     display: flex;
     width: 90%;
