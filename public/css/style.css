@@ -1,9 +1,14 @@
-  body {
+body {
     font-family: 'Roboto', sans-serif;
     font-size: 12px;
     background-color: #ebebeb;
     margin: 0px;
     padding: 0px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
 }
 
 * {
@@ -12,15 +17,10 @@
     box-sizing: border-box;
 }
 
-img {
-    max-width: 100%;
-    height: auto;
-}
-
+/* Configuaraciones @media */
 
 @media (max-width: 360px) {
 
-    /*mobile*/
     nav {
         display: none;
     }
@@ -39,7 +39,6 @@ img {
 
 
 @media (min-width: 361px) {
-    /*tablet*/
 
     main:not(.login-register-page) {
         display: flex;
@@ -111,7 +110,6 @@ img {
 
 @media (min-width: 769px) {
 
-    /*desktop*/
     main:not(.login-register-page) {
         display: flex;
         flex-flow: row wrap;
@@ -320,7 +318,7 @@ footer p {
     color: #666;
 }
 
-/* login */
+/* Login */
 
 .login {
     display: flex;
@@ -357,7 +355,7 @@ footer p {
     background-color: #0022AA;
 }
 
-/* register */
+/* Register */
 .selector {
     display: flex;
     width: 90%;
